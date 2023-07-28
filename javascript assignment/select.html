@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input {  
+        margin-left: 15px;
+
+    }
+</style>
+<!-- ========================================aasignmeni (no 11)==================== -->
+<body>
+    <label for="">Choose your favourite ice cream flavour :</label>
+    <select name="" id="select" onchange="getlist()">
+        <option value="" disabled selected hidden>Please choose your flavour</option>
+        <option value="You Picked Chocolate">Chocolate</option>
+        <option value="You Picked Vanilla">Vanilla</option>
+        <option value="You Picked Strawberry">Strawberry</option>
+        <br><br>
+        <input type="text" id="txt" readonly>
+
+    </select>
+</body>
+
+(week 2 Q no.3)
+<script>
+
+
+    function getlist() {
+        var option = document.getElementById('select').value
+        document.getElementById('txt').value = option
+
+    }
+</script>
+
+</html>

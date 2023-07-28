@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> 
+
+</body>
+<script>
+    // (Q no 1)
+    var a = 10, b = 20
+    console.log(`a is ${a}, b is ${b}`);
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    console.log(`a is ${a}, b is ${b}`);
+    //................................................................
+    // (Q no 2)
+    
+    
+    var n = 123, t = 0, r
+    
+    while (n != 0) {
+        r = parseInt(n % 10);
+        n = parseInt(n / 10);
+        t = t * 10 + r;
+    }
+    console.log(`reverse no..is ${t}`);
+    //...............................................................
+    // (Q no 3)
+    
+    var n = 5, fact = 1
+    
+    for (let i = 1; i <= n; i++) {
+        
+        fact = fact * i
+    }
+    console.log(`factorial is ${fact}`);
+    //....................................................................
+    
+    // (Q no 4)
+    var n = 7, count = 0;
+    
+    for (let i = 2; i <= n; i++) {
+        if (n % i == 0) {
+            count++;
+        }
+    }
+    if (count == 1) {
+        console.log("Prime number");
+    }
+    else {
+        console.log("Not a prime number");
+    }
+    //........................................................................
+    // ( Q . 8)
+    
+    var emp_details = [{ 'eno': 1001001, 'enm': 'amit', 'esal': 10000 },
+    { 'eno': 1001002, 'enm': 'pankaj', 'esal': 20000 },
+    { 'eno': 1001003, 'enm': 'ravi', 'esal': 30000 }]
+    
+    console.log(emp_details[0].eno);
+    console.log(emp_details[0].enm);
+    console.log(emp_details[0].esal);
+
+    //..........................................................................
+// (Q.6)
+    function simpleinterest(p, r, t) {
+        var si = p * r * t / 100
+        return si;
+        
+    }
+    
+    var principal = 1000, rate = 2, time = 1
+    var returnvalue = simpleinterest(principal, rate, time)
+    console.log(`si is ${returnvalue}`);
+    
+    //......................................................................
+    // (Q. 5) 
+    var a = [[10, 20, 30], [40, 50, 60], [70, 80, 90]]
+    var b = [[10, 20, 30], [40, 50, 60], [70, 80, 90]]
+    var c = [[], [], []]
+
+    for (let i = 0; i <= 2; i++) {
+        for (let j = 0; j <= 2; j++) {
+            console.log(a[i][j]);
+            
+        }
+        
+    }
+    
+</script>
+
+</html>

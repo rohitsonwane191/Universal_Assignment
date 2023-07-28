@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- ======================aasignmeni( no 9)==================================== -->
+<body>
+    <input type="checkbox" name="" id="chk1">vanilla
+    <input type="checkbox" n ame="" id="chk2">chocolate
+    <input type="button" value="order" onclick="show()">
+</body>
+( week 2 Q no .1)
+<script>
+    var chk1 = document.getElementById('chk1')
+    var chk2 = document.getElementById('chk2')
+    function show() {
+        if (chk1.checked== true && chk2.checked == true) {
+            alert("You like both")
+
+        }
+        if (chk1.checked == false && chk2.checked == false) {
+            alert("Pick One !!")
+        }
+        else if (chk2.checked == true) {
+            alert("You like chocolate")
+        }
+
+        else if (chk1.checked == true) {
+            alert("You like vanilla")
+        }
+        chk1.checked = false
+        chk2.checked = false
+    }
+    show()
+</script>
+
+</html>
